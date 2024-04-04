@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  background-image: url(https://www.xtrafondos.com/wallpapers/camara-canon-colgando-11450.jpg);
+  background-repeat: repeat;
+  /* background-size: contain; */
+  /* background-position: 50% 0; */
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+input, textarea {
+  margin: 0.5rem;
+  width: 92%;
+  border-radius: 9px;
+  height: 5vh;
+  padding: 0.2rem;
+}
+
+
+.container_data {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #2b333a;
+  color: white;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3c5876;
+}
+
+ul {
+  list-style-type: none !important; 
+  text-transform: none;
+  text-align: start !important;
 }
